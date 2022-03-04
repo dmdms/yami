@@ -14,8 +14,8 @@
 </head>
 <body>
     <h1 class="d-none">스마일푸드 야미 웹(WEB)</h1>
-    <div id="modal">
-        <div class="modal-wrap d-none">
+    <div id="modal" class="d-none">
+        <div class="modal-wrap">
             <h2>배송지연 알림</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi, architecto neque ipsum, consequatur fuga asperiores ut fugit omnis minus est porro recusandae iste doloremque itaque id temporibus quam aliquid.</p>
             <p>죄송합니다.</p>
@@ -23,19 +23,21 @@
     </div>
     <header>
         <h2 class="d-none">야미 헤더 - 브랜드 로고와 전체 메뉴, 기타 메뉴 등</h2>
-        <div class="header-logo">
-            <a href="#">
-                <img src="images/logo.gif" alt="로컬푸드 야미">
-            </a>
-        </div>
-        <section>
-            <div class="header-logo"></div>
-            <ul class="header-link">
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="images/logo.gif" alt="로컬푸드 야미">
+                </a>
+            </div>
+        
+            <ul class="header-links">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">장바구니</a></li>
                 <li><a href="#">마이페이지</a></li>
             </ul>
+        </div>
+        <div class="header-bottom">
             <nav>
                 <h3 class="d-none">야미 웹서비스 전체메뉴</h3>
                 <ul id="gnb"> <!--Global Navigation Bar : 전역메뉴-->
@@ -45,11 +47,16 @@
                     <li><a href="#">고객센터</a></li>
                 </ul>
             </nav>
-        </section>
-
+        </div>
     </header>
     <div class="hero">
-        <img src="images/visual.jpg" alt="함께하면 행복해지는 스마일푸드 야미">
+        <div class="slogan-text">
+            <p>함께하면 행복해지는</p>
+            <p>스마일푸드 야미</p>
+        </div>
+        <div class="down-btn">
+            <a href="#">기업 소개서</a>
+        </div>
     </div>
     <div class="icon-links">
         <ul>
@@ -57,13 +64,13 @@
             <a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a>
             </li>
             <li>
-            <a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a>
+            <a href="#"><img src="images/visual_icon2.jpg" alt="사업안내"></a>
             </li>
             <li>
-            <a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a>
+            <a href="#"><img src="images/visual_icon3.jpg" alt="제품정보"></a>
             </li>
             <li>
-            <a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a>
+            <a href="#"><img src="images/visual_icon4.jpg" alt="커뮤니티"></a>
             </li>
         </ul>
     </div>

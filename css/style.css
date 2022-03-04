@@ -12,12 +12,137 @@ a, a:link {
 }
 
 /*========공지사항 팝업========*/
-
+#modal {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background: gold;
+    left: 50%;
+    top: 50%;
+    margin: -250px 0 0 -200px;
+}
 
 /*========헤더 영역========*/
+.header-top {
+    width: 75rem;
+    margin: 0 auto;
+    padding: 20px;
+    /*overflow: hiddne;*/
+    /*display: flow-root; 표준은 아니지만 곧 표준.*/
+}
+.header-logo {
+    float: left;
+}
+.header-links {
+    float: right;
+    margin: 20px 0 0 0;
+}
+/*.header-top + nav {
+    clear: both;
+}*/
+.header-top::after { /*clearFix*/
+    content: '';
+    display: block;
+    clear: both;
+}
+.header-links li {
+    float: left;
+    margin: 0 0 0 20px;
+    
+}
+
+.header-bottom {
+    border-top: 1px solid #d60c00;
+
+}
 
 
-/*========본문 영역========*/
+/*#gnb {
+    text-align: center;
+    padding: 20px;
+}*/
+/*#gnb li {
+    display: inline-block;
+    margin: 0 50px 20px 0;
+    font-size: 16px;
+    color: #00000c;
+    font-weight: 700;
+}*/
+
+#gnb li :hover {
+    color: #d60c00;
+    transition: all .3s;
+}
+#gnb {
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px;
+}
+#gnb li {
+    text-align: center;
+    float: left;
+    width: 150px;
+    font-size: 16px;
+    color: #00000c;
+    font-weight: 700;
+}
+
+.header-bottom::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*========비주얼 영역========*/
+.hero {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/hero.jpg);
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.slogan-text {
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+.slogan-text p:nth-child(1) {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+}
+.slogan-text p:nth-child(2) {
+    font-size: 2.5rem;
+}
+.down-btn {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    color: #d60c00;
+    border: 2px solid white;
+    background: white;
+    padding: 13px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+/*========아이콘 링크 영역========*/
+.icon-links {
+    background: #d60c00;
+}
+.icon-links ul {
+    width: 900px;
+    margin: 0 auto;    
+    font-size: 0;
+
+}
+.icon-links ul li {
+    display: inline-block;
+}
 
 
 /*========푸터 영역========*/
+/*========반응형 스타일 영역========*/
