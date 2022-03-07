@@ -166,37 +166,58 @@ a, a:link {
 }
 
 
-/*========푸터 영역========*/
-.links-wrap {
+/*========어사이드 스타일========*/
+/* .links-wrap {
     background: #f1f1f1;
     border-top: 1px solid black;
     height: 60px;
     margin-top: 70px;
+} */
+aside {
+    margin: 50px 0 30px;
 }
 .extra-links {
-    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333; 
+    padding: 20px 0;  /*vs height:, align-items 적용 */
+    /* column-gap: 20px; */
+    /* background: #f1f1f1;
     text-align: center;
-    margin: 20px 0 80px 0;
+    margin: 20px 0 80px 0; */
 }
-.extra-links li {
+.extra-links :nth-child(2) {
+    margin: 0 15px;
+}
+/* .extra-links li {
   display: inline-block;
   margin: 0 15px;
   font-size: 14px;
   color: #d60c00;
-}
+} */
 
-.footer-logo {
+/*========푸터 영역========*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+address {
+    margin: 1rem 0;
+}
+/* .footer-logo {
     width: 76px;
     margin: 0 auto;
     padding: 80px 0 20px 0;
-}
+} */
 
-.copyright {
+/* .copyright {
     text-align: center;
     margin: 10px 0 50px 0;
     font-size: 12px;
     font-weight: 700;
     color: #999;
     text-transform: capitalize;
-}
+} */
 /*========반응형 스타일 영역========*/
