@@ -143,6 +143,61 @@ a, a:link {
     display: inline-block;
 }
 
+/*========본문 영역========*/
+#main h4 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    color: #d60c00;
+    margin: 50px;
+    text-transform: uppercase;
+}
+.prd-img li {
+    display: inline-block;    
+    margin: 0 15px 0 15px;
+    border: 1px solid none;
+    border-radius: 150px;
+    overflow: hidden;
+}
+.prd-img {
+    width: 756px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 30px;
+
+}
 
 /*========푸터 영역========*/
+.links-wrap {
+    background: #f1f1f1;
+    border-top: 1px solid black;
+    height: 60px;
+    margin-top: 70px;
+}
+.extra-links {
+    background: #f1f1f1;
+    text-align: center;
+    margin: 20px 0 80px 0;
+}
+.extra-links li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 14px;
+  color: #d60c00;
+}
+
+.footer-logo {
+    width: 76px;
+    margin: 0 auto;
+    padding: 80px 0 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 0 50px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    text-transform: capitalize;
+}
 /*========반응형 스타일 영역========*/
