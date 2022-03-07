@@ -109,6 +109,7 @@ a, a:link {
     position: absolute;
     left: 10%;
     top: 35%;
+    text-shadow: 2px 2px 5px #333; /*텍스트 그림자효과 : x y radius color */
 }
 .slogan-text p:nth-child(1) {
     font-size: 1.5rem;
@@ -146,26 +147,40 @@ a, a:link {
 /*========본문 영역========*/
 #main h4 {
     text-align: center;
-    font-size: 22px;
-    font-weight: 900;
+    font-size: 1.375rem; /*22px는 절대 단위. PXtoEM:단위 계산 사이트*/
+    font-weight: 900; /*단위 없음 값, z-index도 마찬가지.*/
     color: #d60c00;
-    margin: 50px;
+    margin: 50px 0;
     text-transform: uppercase;
 }
-.prd-img li {
+.prd-list { /*ul <--> .prd-list*/
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    
+    /*
+    width: 756px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 30px;
+    */
+}
+
+.prd-list li {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    /*
     display: inline-block;    
     margin: 0 15px 0 15px;
     border: 1px solid none;
     border-radius: 150px;
     overflow: hidden;
+    */
 }
-.prd-img {
-    width: 756px;
-    margin: 0 auto;
-    font-size: 0;
-    padding: 30px;
 
-}
 
 /*========푸터 영역========*/
 .links-wrap {
