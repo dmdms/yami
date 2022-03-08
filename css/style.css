@@ -180,6 +180,13 @@ a, a:link {
 .print-btns {
     display: flex;
 }
+.print-btns li {
+    margin-right: 10px;
+}
+.fa-house {
+    margin-right: 10px;
+}
+
 /*========어사이드 스타일========*/
 /* .links-wrap {
     background: #f1f1f1;
