@@ -218,8 +218,8 @@ a, a:link {
     display: block;
     clear: both;
 }
-#about-main {
-    width: 75rem;
+.about-wrap {
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -284,6 +284,9 @@ a, a:link {
     border-radius: 50px;
     margin-top: 30px;
 }
+
+/*========생산공정 스타일========*/
+
 
 /*========어사이드 스타일========*/
 /* .links-wrap {
